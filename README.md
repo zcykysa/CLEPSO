@@ -1,7 +1,20 @@
 # CLEPSO
 三维牙齿正畸路径规划算法
 
-
+CLEPSO/
+├── Data/                      # Sample 3D tooth model datasets (STL/PLY/VTK)
+├── GroupFiles/                # Core algorithm modules
+│   ├── GroupFdiMark.cpp/h     # Tooth FDI marking and identification
+│   ├── GroupGridLine.cpp/h    # 3D grid visualization for spatial reference
+│   ├── GroupMoveCalculation.cpp/h  # Tooth movement kinematics calculations
+│   ├── GroupOcclusion.cpp/h   # OBB-based collision detection
+│   └── GroupPathPlanningPSO.cpp/h  # CLEPSO path planning implementation
+├── Common.h                   # Global constants, enums, and utility functions
+├── GroupManager.cpp/h         # Module manager for coordinating algorithm components
+├── MainWindow.cpp/h/ui/qrc    # Qt GUI implementation (main interface)
+├── main.cpp                   # Application entry point
+├── CMakeLists.txt             # CMake build configuration
+└── README.md                  # Project documentation
 
 Environment Setup
 Category	Tools/Libraries
@@ -24,5 +37,4 @@ Step 3: Run Path Planning
 Click the "Start Planning" button to execute the CLEPSO algorithm. The system will compute collision-free, constraint-compliant tooth movement paths.
 Step 4: Visualize & Export Results
 View real-time 3D rendering of tooth movements in the VTK viewport.
-Play back the full treatment sequence or inspect individual stages.
 Export optimized path data (e.g., tooth poses per stage) for clinical appliance fabrication.
