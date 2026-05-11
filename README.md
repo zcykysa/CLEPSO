@@ -27,7 +27,7 @@ CLEPSO/
 ## 🛠️ Environment Setup
 | Category               | Tools/Libraries                                                                 |
 |------------------------|---------------------------------------------------------------------------------|
-| Core Language          | C++17                                                                           |
+| Core Language          | C++                                                                         |
 | Build System           | CMake 3.26+                                                                     |
 | GUI Framework          | Qt 5.15.2 (MSVC2019_64)                                                         |
 | 3D Visualization       | VTK 9.1.0                                                                       |
@@ -52,6 +52,4 @@ Click the "Start Planning" button to execute the CLEPSO algorithm. The system wi
 - View real-time 3D rendering of tooth movements in the VTK viewport.
 - Export optimized path data (e.g., tooth poses per stage) for clinical appliance fabrication.
 ```
-
----
 
